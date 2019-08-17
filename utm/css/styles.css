@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic-ext');
+
+.wrap {
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: #F7F8FA;
+    position: relative;
+}
+.nav {
+    display: flex;
+    height: 50px;
+    width: 600px;
+}
+.nav__item {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    box-sizing: border-box;
+    transition: 0.2s;
+    border-bottom: 3px solid rgba(1, 153, 230, 0);
+    position: relative;
+} 
+.nav__item:hover {
+    border-bottom: 3px solid rgba(1, 153, 230, 1);
+}
+.nav__item_active {
+    background-color: #0199E6;
+}
+.nav__item_disable {
+    background-color: #323232;
+}
+.nav__tab {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.nav__triangle {
+    padding-left: 7px;
+    height: 8px;
+    width: 10px;
+}
+.nav__ul {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    top: 50px;
+}
+.nav__li {
+    cursor:  pointer;
+    display: block;
+    padding: 10px;
+    color: #545454;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.nav__item:hover .nav__ul {
+    display: block;
+}
+.nav__li:hover {
+    background-color: #0199E6;
+    color: #fff;
+}
+.content {
+    padding: 20px;
+}
+
+.content__p {
+    margin: 0 0 0 2px;
+    display: block;
+    width: 120px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #545454;
+}
+.btn {
+    height: 40px;
+    border: 0px solid;
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn_neitral {
+    background-color: #0199E6;
+}
+.btn_success {
+    background-color: #20b92c;
+    color: #fff;
+}
+.btn_error {
+    background-color: #EA172C;
+    color: #fff;
+}
+.result__btn {
+    width: 560px;
+    border-radius: 2px;
+}
+.result__textarea {
+    height: 70px;
+    width: 560px;
+    box-sizing: border-box;
+    resize: none;
+    border: 1px solid #E5E5E5;
+    color: #323232;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+.result__textarea:focus {
+    border: 1px solid #0199E6;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.result__textarea::-webkit-scrollbar {
+    width: 5px;
+}
+.result__textarea::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+.result__textarea::-webkit-scrollbar-thumb {
+    background-color: #0199E6;
+}
+.url__btn {
+    width: 120px;
+    float: right;
+    border-radius: 0px 2px 2px 0px;
+}
+.url__input {
+    width: 440px;
+}
+.utm__title {
+    display: flex;
+    height: 40px;
+    width: 300px;
+    background-color: #E5E5E5;
+    color: #323232;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.utm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.utm__block {
+    width: 260px;
+}
+.utm__label {
+    display: block;
+    width: 260px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.utm__label:nth-child(3) {
+    padding-bottom: 0px;
+}
+.utm__error{
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    left: 270px;
+    top: 16px;
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+    z-index: 98;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+.error__triangle {
+    height: 12px;
+    width: 10px;
+    z-index: 99;
+    position: absolute;
+    left: -10px;
+    top: 14px;
+}
+.active {
+    display: block;
+}
+.disable {
+    display: none;
+}
+
+.utm__imput {
+    height: 40px;
+    width: 260px;
+    
+}
+input {
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #E5E5E5;
+    transition: 0.2s;
+    color: #323232;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+input:focus {
+    border: 1px solid #0199E6;
+    outline: -webkit-focus-ring-color auto 0px;
+}

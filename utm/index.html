@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>UTM</title>
+    <Link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <Link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="/img/icon_16-2.png" type="image/png">
+    <script src="js/clipboard.js-master/dist/clipboard.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav class="nav">
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_disable" id="nav__tab-ct">Сброс</a>
+            </div>
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_active">G. Ads
+                <svg class="nav__triangle">
+                    <polygon points="0 0, 5 8, 10 0" fill="#fff"/>
+                </svg></a>
+                <ul class="nav__ul">
+                    <li class="nav__li" id="nav__tab-ga-poisk">Поиск</li>
+                    <li class="nav__li" id="nav__tab-ga-kms">КМС</li>
+                </ul>
+            </div>
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_disable">Я.Директ
+                <svg class="nav__triangle">
+                    <polygon points="0 0, 5 8, 10 0" fill="#fff"/>
+                </svg></a>
+                <ul class="nav__ul">
+                    <li class="nav__li" id="nav__tab-yd-poisk">Поиск</li>
+                    <li class="nav__li" id="nav__tab-yd-rsya">РСЯ</li>
+                </ul>
+            </div>
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_disable">Вконтакте
+                <svg class="nav__triangle">
+                    <polygon points="0 0, 5 8, 10 0" fill="#fff"/>
+                </svg></a>
+                <ul class="nav__ul">
+                    <li class="nav__li" id="nav__tab-vk-cpc">Клики</li>
+                    <li class="nav__li" id="nav__tab-vk-cpm">Показы</li>
+                </ul>
+            </div>
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_disable" id="nav__tab-fb">Facebook
+<!--
+                <svg class="nav__triangle">
+                    <polygon points="0 0, 5 8, 10 0" fill="#fff"/>
+                </svg>
+-->
+                </a>
+            </div>
+            
+            <div class="nav__item nav__item_disable"><a href="#" class="nav__tab nav__tab_disable" >myTarget
+                <svg class="nav__triangle">
+                    <polygon points="0 0, 5 8, 10 0" fill="#fff"/>
+                </svg></a>
+                <ul class="nav__ul">
+                    <li class="nav__li" id="nav__tab-mt-cpc">Клики</li>
+                    <li class="nav__li" id="nav__tab-mt-cpm">Показы</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <label class="input url">
+                <p class="content__p">Адрес сайта:</p>
+                <input type="text" class="url__input" id="url" placeholder="Введите адрес вашего сайта">
+                <button tipe="button" class="btn url__btn btn_neitral" id="btn_url_paste">URL этой стр.</button>
+            </label>
+            </div>
+            <div class="utm__title">Обязательные поля</div>
+            <div class="utm__title">Дополнительные поля</div>
+            <div class="content utm">
+            <div class="utm__block utm_required">
+               
+                <label class="utm__label">
+                    <div class="utm__error disable" id="sourse-error">
+                        <svg class="error__triangle">
+                            <polygon points="0 6, 10 0, 10 12" fill="red"/>
+                        </svg>Обязательное поле
+                    </div>
+                    <p class="content__p utm__p">utm_source:</p>
+                    <input class="utm__imput" type="text" id="source">
+                </label>
+                
+                <label class="utm__label">
+                   <div class="utm__error disable" id="medium-error">
+                        <svg class="error__triangle">
+                            <polygon points="0 6, 10 0, 10 12" fill="red"/>
+                        </svg>Обязательное поле
+                    </div>
+                    <p class="content__p utm__p">utm_medium:</p>
+                    <input class="utm__imput" type="text" id="medium">
+                </label>
+                
+                <label class="utm__label">
+                   <div class="utm__error disable" id="campaign-error">
+                        <svg class="error__triangle">
+                            <polygon points="0 6, 10 0, 10 12" fill="red"/>
+                        </svg>Обязательное поле
+                    </div>
+                    <p class="content__p utm__p">utm_campaign:</p>
+                    <input class="utm__imput" type="text" id="campaign">
+                </label>
+                
+            </div>
+            <div class="utm__block utm_optional">
+               
+                <label class="utm__label">
+                    <p class="content__p utm__p">utm_content:</p>
+                    <input class="utm__imput" type="text" id="content">
+                </label>
+                <label class="utm__label">
+                    <p class="content__p utm__p">utm_term:</p>
+                <input class="utm__imput" type="text" id="term">
+                </label>
+            </div></div>
+            <div class="content result">
+                <label class="input">
+                    <button tipe="button" class="btn result__btn btn_neitral" id="btn_url_copy" data-clipboard-target="#result">Копировать результат</button>
+                    <textarea type="text" class="result__textarea" id="result" placeholder="Здесь будет результат" value=""></textarea>
+                </label>
+        </div></div>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
+

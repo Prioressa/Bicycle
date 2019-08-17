@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2, // Номер версии
+    "name": "UTM-builder", // Название расширения
+    "version": "1.0", 
+
+    "permissions": [
+        "tabs", // Разрешить расширению работать с вкладками
+        "activeTab",
+        "clipboardRead",
+        "clipboardWrite"
+ ],
+    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
+    "browser_action": { // Элементы браузера
+        "default_title": "UTM-builder", // Название кнопки
+        "popup": "index.html", // Всплывающее окно
+        "default_popup": "index.html",
+        "default_icon": "img/icon_48-2.png",
+        "icons": {
+            "16": "img/icon_16-2.png",
+            "24": "img/icon_24-2.png",
+            "32": "img/icon_32-2.png",
+            "48": "img/icon_48-2.png",
+            "128": "img/icon_128-2.png"
+          }
+    }
+}
