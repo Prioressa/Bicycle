@@ -6,7 +6,7 @@
 
     .top {
         position: relative;
-        background-image: url(../../img/bg%20top.png);
+        background-image: url(../img/bg%20top.png);
         background-size: cover;
         background-position: center
     }
@@ -29,7 +29,7 @@
 
     .top {
         position: relative;
-        background-image: url(../../img/bg%20top.png);
+        background-image: url(../img/bg%20top.png);
         background-size: cover;
         background-position: center
     }
@@ -147,7 +147,7 @@
     }
 
     .top {
-        background-image: url(../../img/bg%20top.png);
+        background-image: url(../img/bg%20top.png);
         background-size: cover;
         background-position: center;
         position: relative;
