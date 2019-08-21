@@ -366,7 +366,7 @@
 
     .mailing__wrap {
         height: 350px;
-        width: 600px;
+        width: 100%;
     }
 
     .mailing__form {
@@ -374,11 +374,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .mailing__input {
-        float: none
+        float: none;
+        width: 100%;
     }
 
     .mailing__btn {
