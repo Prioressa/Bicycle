@@ -146,9 +146,6 @@
     .about {
         padding: 120px 10%;
     }
-    .about__icon {
-        
-    }
 
     .top__logo-mobile {
         display: block;
@@ -176,6 +173,7 @@
         position: fixed;
         z-index: 150;
         right: 10px;
+        
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -206,7 +204,6 @@
         overflow-y: auto;
         transition: .6s;
         opacity: 0;
-        box-shadow: 2px 2px 10px rgba(154, 147, 140, 0.5);
     }
 
     .top__menu-mobile_active .top__menu-mobile_nav {
@@ -238,7 +235,6 @@
         background-color: #fff;
         position: relative;
         transition: .2s;
-        box-shadow: 2px 2px 10px rgba(154, 147, 140, 0.5);
     }
 
     .top__button__span {
@@ -270,9 +266,6 @@
         content: '';
         transform: translateY(7px);
         transition: .2s
-    }
-    .top__menu-mobile_active .top__button-mobile {
-        box-shadow: 2px 2px 10px rgba(154, 147, 140, 0);
     }
     .top__menu-mobile_active .top__button__span::before {
 /*        transition: .2s;*/
