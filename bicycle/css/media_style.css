@@ -144,8 +144,11 @@
         margin: 0
     }
     .about {
-    padding: 120px 10%;
-}
+        padding: 120px 10%;
+    }
+    .about__icon {
+        
+    }
 
     .top__logo-mobile {
         display: block;
@@ -161,7 +164,7 @@
         background-size: cover;
         background-position: center;
         position: relative;
-        height: 600px
+        min-height: 600px;
     }
 
     .top__menu-desktop {
@@ -193,7 +196,7 @@
         display: flex;
         z-index: 98;
         height: 100%;
-        width: auto;
+        width: 85%;
         right: -100%;
         background-color: #fff;
         flex-direction: column;
@@ -372,7 +375,8 @@
     }
 
     .mailing__wrap {
-        height: 350px
+        height: 350px;
+        width: 600px;
     }
 
     .mailing__form {
